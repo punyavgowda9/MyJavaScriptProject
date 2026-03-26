@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<h1>JavaScript Functions</h1>
+ 
+   <p>Call a function whch performs a calculation and returns the result:</p>
+ 
+   <input type="number" id = "sc" name = "Science">
+<input type="number" id = "en" name = "English">
+<input type="number" id = "ssc" name = "Social">
+<input type="number" id = "ma" name = "Maths">
+<input type="number" id = "hin" name = "Hindi">
+<br>
+<button type="button" onClick="GetResult()">Result</button>
+<p id = "demo"></p>
+ 
+   <script>
+
+    function GetResult()
+
+    {
+
+        let result = GetAverage();
+
+        document.getElementById("demo").innerHTML = result;
+
+    }
+ 
+    function GetAverage()
+
+    {
+
+        return eval(eval(document.getElementById("sc").value + '+' +
+
+    document.getElementById("ma").value + '+' +
+
+    document.getElementById("ssc").value + '+' +
+
+    document.getElementById("en").value + '+' +
+
+    document.getElementById("hin").value)/5);
+
+    }
+</script>
+</body>
+</html>
+ 

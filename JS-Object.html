@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p id = "demo"></p>
+<script>
+
+        var person = {
+
+            firstName: "James",
+
+            lastName: "Bond",
+
+            age: 25,
+
+            address: {
+
+                street: "1, Bulkingham Palace",
+
+                City: "London",
+
+                country: "UK"
+
+            },
+
+            getFullName: function(){
+
+                return this.firstName + ' ' + this.lastName
+
+            }
+
+        };
+ 
+        const car = {type:"Fiat", model:"500", color:"white"};
+ 
+        car.color = "red";
+        car.owner="Johnson";
+        document.getElementById("demo").innerHTML="Car owner is"+car.owner;
+        document.write(person.getFullName()+",");
+        document.write(person.firstName);
+        
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script>
+
+        function GetterSetterOOPSJS()
+
+        {
+
+            class Dog{
+
+                constructor(name)
+
+                {
+
+                    this.name = name;
+
+                }
+ 
+                get dogName() { return this.name; }
+ 
+                set dogName(newName) { this.name = newName; }
+ 
+                bark(){
+
+                    console.log(`${this.name} says woof`);
+
+                }
+
+            }
+            let myDog= new Dog('Rayne');
+            console.log(myDog.name);
+            myDog.dogName='Buddy';
+            console.log(myDog.name);
+            myDog.bark();
+
+        }
+</script>
+</body>
+</html>
+ 

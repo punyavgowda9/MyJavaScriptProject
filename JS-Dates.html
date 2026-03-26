@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p> A date obj can be created with a specified date and time:</p>
+    <p id="demo"></p>
+    <script>
+        let dt= new Date();
+        d=new Date("October 13, 2014 11:13:00");
+        d+=",<br> Date(yea,month)-"+new Date(2023,9);
+        d+=",<br>Date(year, month, day)-"+new Date(2023,9,15);
+        document.write(dt);
+        document.write(d);
+        document.getElementById("demo").innerHTML=d;
+    </script><br>
+    <p id="demo2"></p>
+    <script>
+        const d= new Date("2021-03-25")
+        document.getElementById("demo2").innerHTML=d.getFullYear();
+        document.write("Month")+d.getMonth();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

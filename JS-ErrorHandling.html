@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<p>Call a function which performs a calculation and returns the result:</p>
+ 
+    <button type="button" onclick="CheckError()">Result:</button>
+<p id = "message"></p>
+<script>
+ 
+        function CheckError()
+
+        {
+
+            try
+
+            {var result = Sum(10,20);}
+
+            catch(ex)
+
+            {
+
+                document.getElementById("rrorMessage").innerHTML = ex;
+
+                console.log("Sum is not defined here");
+
+            }
+
+            finally{
+
+                document.getElementById("message").innerHTML = "finally block executed";
+
+            }
+
+        }
+ 
+        function ThrowError()
+
+        {
+
+            try
+
+            {
+
+                throw "Error occured";
+
+            }
+
+            catch(ex)
+
+            {
+
+                alert(ex);
+
+            }
+
+        }
+</script>
+</body>
+</html>
+ 
